@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Module>
+	<ModulePrefs title="__MSG_title__" height="0">
+		<Require feature="setprefs"/>
+		<Require feature="dynamic-height"/>
+		<Locale lang="ja">
+			<msg name="title">TODO リスト</msg>
+			<msg name="set_title">タイトル</msg>
+			<msg name="priority_high">高</msg>
+			<msg name="priority_normal">中</msg>
+			<msg name="priority_low">低</msg>
+			<msg name="add">追加</msg>
+			<msg name="delete">削除</msg>
+			<msg name="todoList">todo</msg>
+			<msg name="titleEdit">タイトル編集</msg>
+			<msg name="fontSize">フォントサイズ</msg> 
+			<msg name="fontSize_normal">通常</msg> 
+			<msg name="fontSize_large">大きい</msg> 
+		</Locale>
+		<Locale>
+			<msg name="title">TODO List</msg>
+			<msg name="set_title">Title</msg>
+			<msg name="priority_high">High</msg>
+			<msg name="priority_normal">Normal</msg>
+			<msg name="priority_low">Low</msg>
+			<msg name="add">Add</msg>
+			<msg name="delete">Delete</msg>
+			<msg name="todoList">todo</msg>
+			<msg name="titleEdit">Title Edit</msg>
+			<msg name="fontSize">Font Size</msg> 
+			<msg name="fontSize_normal">Normal</msg> 
+			<msg name="fontSize_large">Large</msg>
+		</Locale>
+		<Icon>tick.gif</Icon>
+	</ModulePrefs>
+	
+	<WidgetPref datatype="bool" display_name="__MSG_titleEdit__" name="titleEdit" value="true"/>
+	
+	<UserPref name="fontSize" datatype="enum" display_name="__MSG_fontSize__" default_value="normal">
+		<EnumValue value="normal" display_value="__MSG_fontSize_normal__"/>
+		<EnumValue value="large" display_value="__MSG_fontSize_large__"/>
+	</UserPref>
+	<UserPref datatype="hidden" name="todoList" display_name="__MSG_todoList__" default_value=""/>
+	<Header refresh="off" maximize="off"/>
+	<Content type="html" view="home"><![CDATA[
+<style>
+/* todoList */
+body.large {
+	font-size: 125%;
+}
+.todoAddTable, .todoAddTableTd, .todoAddTextBox{
+	width:100%;
+}
+
+.todoListTable {
+	width: 100%;
+/*	table-layout: fixed;*/
+	background-color: #ffffff;
+	font-size: 85%;
+}
+
+.todoItemOdd {
+	cursor: move;
+	font-family: Helvetica, Arial, sans-serif;
+	background-color: #dbdcde;
+}
+
+.todoItemEven {
+	cursor: move;
+	font-family: Helvetica, Arial, sans-serif;
+	background-color: #ffffff;
+}
+
+.todoItemOddMark {
+	cursor: move;
+	font-family: Helvetica, Arial, sans-serif;
+	
+	background-color: #ccddd5;
+}
+
+.todoItemEvenMark {
+	cursor: move;
+	font-family: Helvetica, Arial, sans-serif;
+	
+	background-color: #ccddd5;
+}
+
+.todoFloatItem {
+	position:absolute;
+	z-index:900;
+	filter:alpha(opacity=70);
+	-moz-opacity:0.7;
+	opacity:0.7;
+}
+
+.todoPriorityTd {
+	width: 1.5em;
+}
+.todoPriority {
+	text-align: center;
+	cursor: pointer;
+	color: #4c4c4c;
+	font-size: 90%;
+}
+
+.todoTextTd {
+	width: 100%;
+	overflow: hidden;
+}
+.todoTextDiv {
+	cursor: move;
+	overflow: hidden;
+	width: 100%;
+	word-break: break-all;
+}
+.todoText {
+	text-align: left;
+	cursor: default;
+}
+.todoTextEdit {
+	width: 100%;
+}
+
+.todoCheckTd {
+	text-align: center;
+/*	width: 1.2em;*/
+	width: 20px;
+}
+.todoCheck {
+	cursor: pointer;
+}
+
+.todoDeleteTd {
+/*	width: 1.2em;*/
+	width: 20px;
+}
+.todoDelete {
+	float: center;
+	cursor: pointer;
+	margin-top:2px;
+	margin-bottom:1px;
+}
+</style>
+
+<script type="text/javascript">is_loadScript("todoList.js")</script>
+	]]></Content>
+</Module>

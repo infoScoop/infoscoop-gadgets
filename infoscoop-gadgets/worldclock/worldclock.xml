@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Module>
+	<ModulePrefs title="__MSG_title__">
+		<Require feature="dynamic-height"/>
+		<Locale lang="ja">
+			<msg name="title">標準時時計</msg> 
+			<msg name="lb_contentLink">コンテンツクリック時のリンク先</msg>
+		</Locale>
+		<Locale>
+			<msg name="title">World clock</msg> 
+			<msg name="lb_contentLink">Linked Websites of contents click</msg>
+		</Locale>
+		<Icon>clock-globe.gif</Icon>
+	</ModulePrefs>
+	<WidgetPref datatype="string" display_name="__MSG_lb_contentLink__" name="contentLink" value=""/>
+
+	<Header maximize="off" refresh="off"/>
+	
+	<Content type="html" view="home"><![CDATA[
+<style type="text/css"><!--
+body{
+	margin:0;
+}
+#worldclock{
+	border:1px #eef;
+	padding:5px;
+	font-family:arial;
+	font-size:10pt;
+	font-weight:bold;
+	text-align:center;
+}
+.country{
+	font-family:san-serif;
+	font-size:8pt;
+	color:gray;
+}
+.date{
+	font-family:san-serif;
+	font-size:8pt;
+	color:gray;
+}
+.hide{
+	display:none;
+}
+.show{
+	display:inline;
+}
+--></style>
+<div id="worldclock">
+	<div class="country"><image src='imgs/jp.png'>&nbsp;&nbsp;TYO:</div>
+	<div class="date" id="jp_date"></div>
+	<div>
+		<span class="time" id="jp_time"></span>
+		<span class="hide" id="jp_dst"><image src='imgs/dst.gif'></span>
+	</div>
+	<hr />
+	<div class="country"><image src='imgs/gb.png'>&nbsp;&nbsp;LDN:</div>
+	<div class="date" id="uk_date"></div>
+	<div>
+		<span class="time" id="uk_time"></span>
+		<span class="hide" id="uk_dst"><image src='imgs/dst.gif'></span>
+	</div>
+	<hr />
+	<div class="country"><image src='imgs/us.png'>&nbsp;&nbsp;NYC:</div>
+	<div class="date" id="et_date"></div>
+	<div>
+		<span class="time" id="et_time"></span>
+		<span class="hide" id="et_dst"><image src='imgs/dst.gif'></span>
+	</div>
+</div>
+
+<script type="text/javascript">is_loadScript("worldclock.js")</script>
+	]]></Content>
+</Module>

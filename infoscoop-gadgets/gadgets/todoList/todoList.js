@@ -29,7 +29,7 @@ TodoList.prototype.classDef = function() {
 //			widget.initUserPref("todoList", eval('(' + prefs.getString("todoList") + ')'));
 		}
 		
-		if( prefs.getString("fontSize") == "")
+		if( prefs.getString("fontSize") == "large")
 			$( document.body ).addClassName("large");
 		
 		buildContents();

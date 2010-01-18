@@ -291,7 +291,7 @@ TodoList.prototype.classDef = function() {
 		deleteButton.className = 'todoDelete';
 //		deleteButton.title = 'delete';
 		deleteButton.title = prefs.getMsg("delete");
-		deleteButton.src = 'imgs/trash.gif';
+		deleteButton.src = is_gadgetBaseUrl + '/imgs/trash.gif';
 		
 		Event.observe( deleteButton, 'mousedown', self.iconDown.bind(self, deleteButton), false, deleteButton.id);
 		Event.observe( deleteButton, 'mouseup', self.iconUp.bind(self, deleteButton), false, deleteButton.id);

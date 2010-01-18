@@ -9,7 +9,7 @@
 		<Locale>
 			<msg name="title">Calculator</msg>
 		</Locale>
-		<Icon>calculator.gif</Icon>
+		<Icon>__IS_GADGET_BASE_URL__/calculator.gif</Icon>
 	</ModulePrefs>
 	
 	<Header maximize="off" refresh="off"/>
@@ -109,6 +109,6 @@
 </tr>
 </table>
 
-<script type="text/javascript">is_loadScript("calc.js")</script>
+<script type="text/javascript">is_loadScript("__IS_GADGET_BASE_URL__/calc.js")</script>
 	]]></Content>
 </Module>

@@ -32,7 +32,7 @@
 			<msg name="fontSize_normal">Normal</msg> 
 			<msg name="fontSize_large">Large</msg>
 		</Locale>
-		<Icon>tick.gif</Icon>
+		<Icon>__IS_GADGET_BASE_URL__/tick.gif</Icon>
 	</ModulePrefs>
 	
 	<WidgetPref datatype="bool" display_name="__MSG_titleEdit__" name="titleEdit" value="true"/>
@@ -142,7 +142,9 @@ body.large {
 	margin-bottom:1px;
 }
 </style>
-
-<script type="text/javascript">is_loadScript("todoList.js")</script>
+<script type="text/javascript">
+is_gadgetBaseUrl = "__IS_GADGET_BASE_URL__";
+</script>
+<script type="text/javascript">is_loadScript("__IS_GADGET_BASE_URL__/todoList.js")</script>
 	]]></Content>
 </Module>

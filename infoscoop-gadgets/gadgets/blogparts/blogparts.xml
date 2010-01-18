@@ -23,7 +23,7 @@
 			<msg name="height">Height(pixel)</msg>
 			<msg name="height-description"><![CDATA[The height of the gadget is specified. < br/>When the values other than the numerical value and the empty value and the numerical value of less than 0 are set, do the self adjustment of the height of the gadget. ]]></msg>
 		</Locale>
-		<Icon>page_white_gear.gif</Icon>
+		<Icon>__IS_GADGET_BASE_URL__/page_white_gear.gif</Icon>
 	</ModulePrefs>
 	<UserPref default_value="auto" display_name="__MSG_itemDisplay__" datatype="enum" name="itemDisplay">
 		<EnumValue display_value="__MSG_itemDisplay-inline__" value="inline"/>

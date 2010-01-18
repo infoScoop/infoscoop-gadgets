@@ -38,7 +38,7 @@
 			<msg name="sticky_data_default">click to input</msg>
 			<msg name="titleEdit">Title Edit</msg>
 		</Locale>
-		<Icon>note.gif</Icon>
+		<Icon>__IS_GADGET_BASE_URL__/note.gif</Icon>
 	</ModulePrefs>
 	
 	<WidgetPref datatype="bool" display_name="__MSG_titleEdit__" name="titleEdit" value="true"/>
@@ -94,6 +94,6 @@
 	<textarea id="editor"></textarea>
 </div>
 
-<script type="text/javascript">is_loadScript("sticky.js")</script>
+<script type="text/javascript">is_loadScript("__IS_GADGET_BASE_URL__/sticky.js")</script>
 	]]></Content>
 </Module>

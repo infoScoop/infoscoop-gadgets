@@ -15,7 +15,7 @@
 	
 	<!-- zip infoscoop war file to temporary directory -->
 	<target name="dist" depends="prepare" description="zip gadgets">
-		<zip basedir="${basedir}/gadgets" destfile="${basedir}/dist/infoscoop-gadgets-${version}.zip">
+		<zip basedir="${basedir}/gadgets/" destfile="${basedir}/dist/infoscoop-gadgets-${version}.zip">
 			<exclude name="svn/*"/>
 		</zip>
 	</target>

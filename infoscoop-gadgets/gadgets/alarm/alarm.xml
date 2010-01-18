@@ -43,7 +43,7 @@
 			<msg name="hour_error">[Hours] Please input the integer from 0 to 23</msg>
 			<msg name="minute_error">[Minutes] Please input the integer from 0 to 59</msg>
 		</Locale>
-		<Icon>clock.gif</Icon>
+		<Icon>__IS_GADGET_BASE_URL__/clock.gif</Icon>
 	</ModulePrefs>
 	
 	<UserPref required="true" name="title" datatype="string" display_name="__MSG_uptitle__"/>
@@ -99,6 +99,6 @@ body.alarmed {
 <div id="title"></div>
 <div id="time"></div>
 
-<script type="text/javascript">is_loadScript("alarm.js")</script>
+<script type="text/javascript">is_loadScript("__IS_GADGET_BASE_URL__/alarm.js")</script>
 	]]></Content>
 </Module>

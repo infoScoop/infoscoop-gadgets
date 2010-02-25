@@ -80,7 +80,7 @@
 	overflow:	hidden;
 	font-family: "courier";
 	letter-spacing: 0;
-	color:	__UP_fgColor_;
+	color:	__UP_fgColor__;
 	font-size: 12px;
 	font-size: __UP_fontSize__px;
 }

@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project name="archive gadgets for infoscoop" default="dist" basedir=".">
 	<property name="app.name" value="infoScoop Gadgets" />
-	<property name="version" value="1.0" />
+	<property name="version" value="1.0.2" />
 	
 	<!-- remove distribution directory -->
 	<target name="clean" description="Delete old build directory">
-		<delete dir="${dist.home}" />
+		<delete dir="${basedir}/dist" />
 	</target>
 	
 	<!-- make distoribution directory -->

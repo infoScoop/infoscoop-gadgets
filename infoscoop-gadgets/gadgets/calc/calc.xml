@@ -3,23 +3,20 @@
 <Module>
 	<ModulePrefs title="__MSG_title__">
 		<Require feature="dynamic-height"/>
-		<Locale lang="ja">
-			<msg name="title">電卓</msg>
-		</Locale>
-		<Locale>
-			<msg name="title">Calculator</msg>
-		</Locale>
+		<Locale messages="ALL_ALL.xml" />
+		<Locale lang="ja" messages="ja_ALL.xml"/>
+		<Locale lang="zh" messages="zh_ALL.xml"/>
 		<Icon>__IS_GADGET_BASE_URL__/calculator.gif</Icon>
 	</ModulePrefs>
-	
+
 	<Header maximize="off" refresh="off"/>
-	
+
 	<Content type="html" view="home"><![CDATA[
 <style type="text/css">
 *,body {
 	margin: auto;
 	padding: auto;
-	
+
 	font-family: 'ヒラギノ角ゴ Pro W3','Hiragino Kaku Gothic Pro','ＭＳ Ｐゴシック',sans-serif;
 }
 #root {

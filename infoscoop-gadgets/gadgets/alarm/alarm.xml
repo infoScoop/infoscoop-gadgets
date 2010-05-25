@@ -5,47 +5,12 @@
 		<Require feature="setprefs"/>
 		<Require feature="dynamic-height"/>
 		<Require feature="settitle"/>
-		<Locale lang="ja">
-			<msg name="title">アラーム</msg>
-			<msg name="alarm_of">${title}のアラーム</msg>
-			<msg name="message_invalidate">不正な値が入力されました。設定し直して下さい。</msg>
-			<msg name="message_alert">「${title}」の時間です。</msg>
-			<msg name="message_displayTime">${day}日&amp;nbsp;&amp;nbsp;${hour}:${minute}:${second}</msg>
-			<msg name="message_countdown">「${title}」まで、あと</msg>
-			<msg name="message_xday">「${date}」の</msg>
-			<msg name="uptitle">タイトル</msg>
-			<msg name="method">お知らせ方法</msg>
-			<msg name="alert">アラート</msg>
-			<msg name="shake">ブラウザを揺らす</msg>
-			<msg name="nothing">何もしない</msg>
-			<msg name="ymd">年月日</msg>
-			<msg name="hour">時</msg>
-			<msg name="minute">分</msg>
-			<msg name="hour_error">[時] 0から23までの整数(半角)を入力してください</msg>
-			<msg name="minute_error">[分] 0から59までの整数(半角)を入力してください</msg>
-		</Locale>
-		<Locale>
-			<msg name="title">Alarm</msg>
-			<msg name="alarm_of">Alarm of ${title}</msg>
-			<msg name="message_invalidate">An illegal value was input. Please set again.</msg>
-			<msg name="message_alert">It is time of the "${title}"</msg>
-			<msg name="message_displayTime">${day} day&amp;nbsp;&amp;nbsp;${hour}:${minute}:${second}</msg>
-			<msg name="message_countdown">until time to ${title}</msg>
-			<msg name="message_xday">in "${date}"</msg>
-			<msg name="uptitle">Title</msg>
-			<msg name="method">Information type</msg>
-			<msg name="alert">Alert</msg>
-			<msg name="shake">Swing</msg>
-			<msg name="nothing">None</msg>
-			<msg name="ymd">Date</msg>
-			<msg name="hour">Hours</msg>
-			<msg name="minute">Minutes</msg>
-			<msg name="hour_error">[Hours] Please input the integer from 0 to 23</msg>
-			<msg name="minute_error">[Minutes] Please input the integer from 0 to 59</msg>
-		</Locale>
+		<Locale messages="ALL_ALL.xml" />
+		<Locale lang="ja" messages="ja_ALL.xml"/>
+		<Locale lang="zh" messages="zh_ALL.xml"/>
 		<Icon>__IS_GADGET_BASE_URL__/clock.gif</Icon>
 	</ModulePrefs>
-	
+
 	<UserPref required="true" name="title" datatype="string" display_name="__MSG_uptitle__"/>
 	<UserPref name="method" datatype="enum" display_name="__MSG_method__" default_value="alert">
 		<EnumValue display_value="__MSG_alert__" value="alert"/>
@@ -55,9 +20,9 @@
 	<UserPref required="true" name="ymd" datatype="calendar" default_value="" display_name="__MSG_ymd__"/>
 	<UserPref required="true" name="hour" datatype="string" default_value="" display_name="__MSG_hour__"/>
 	<UserPref required="true" name="minute" datatype="string" default_value="" display_name="__MSG_minute__"/>
-	
+
 	<Header maximize="off" refresh="off"/>
-	
+
 	<Content type="html" view="home"><![CDATA[
 <style type="text/css">
 *,body {
@@ -65,7 +30,7 @@
 	padding: 0;
 }
 
-#small,#title,#time { 
+#small,#title,#time {
 	text-align: center;
 }
 #small {

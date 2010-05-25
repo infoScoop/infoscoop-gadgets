@@ -3,26 +3,9 @@
 <Module>
 	<ModulePrefs title="__MSG_title__" scroll="yes">
 		<Require feature="dynamic-height"/>
-		<Locale lang="ja">
-			<msg name="title">ブログパーツ</msg>
-			<msg name="snippet">HTML ソース</msg>
-			<msg name="itemDisplay">コンテンツ表示モード</msg>
-			<msg name="itemDisplay-inline">ポータル内フレーム</msg>
-			<msg name="itemDisplay-newWindow">新しいウィンドウ</msg>
-			<msg name="itemDisplay-auto">自動判別</msg>
-			<msg name="height">高さ(ピクセル)</msg>
-			<msg name="height-description"><![CDATA[ガジェットの高さを指定します。<br/>空、0未満の数値、もしくは数値以外の値を設定した場合はガジェットの高さは自動調整されます。]]></msg>
-		</Locale>
-		<Locale>
-			<msg name="title">Blogparts</msg>
-			<msg name="snippet">HTML Source</msg>
-			<msg name="itemDisplay">Content display mode</msg>
-			<msg name="itemDisplay-inline">Frame in portal</msg>
-			<msg name="itemDisplay-newWindow">new window</msg>
-			<msg name="itemDisplay-auto">auto detect</msg>
-			<msg name="height">Height(pixel)</msg>
-			<msg name="height-description"><![CDATA[The height of the gadget is specified. < br/>When the values other than the numerical value and the empty value and the numerical value of less than 0 are set, do the self adjustment of the height of the gadget. ]]></msg>
-		</Locale>
+		<Locale messages="ALL_ALL.xml" />
+		<Locale lang="ja" messages="ja_ALL.xml"/>
+		<Locale lang="zh" messages="zh_ALL.xml"/>
 		<Icon>__IS_GADGET_BASE_URL__/page_white_gear.gif</Icon>
 	</ModulePrefs>
 	<UserPref default_value="auto" display_name="__MSG_itemDisplay__" datatype="enum" name="itemDisplay">
@@ -40,10 +23,10 @@ __UP_snippet__
 <script type="text/javascript">
 function main() {
 	var prefs = new gadgets.Prefs();
-	
+
 	var height = prefs.getInt("height");
 	gadgets.window.adjustHeight( ( height > 0 ? height : undefined ) );
-	
+
 	var itemDisplay = prefs.getString("itemDisplay");
 	var target;
 	switch(itemDisplay){
@@ -59,21 +42,21 @@ function main() {
 			this.target = target;
 			if( !this.href )
 				this.href = this.action;
-			
+
 			if( itemDisplay != "newwindow")
 				parent.IS_Portal.buildIFrame( this );
 		} catch( ex ) {
 			gadgets.warn( ex );
 		}
 	};
-	
+
 	var anchors = document.getElementsByTagName("a");
 	for( var i=0;i<anchors.length;i++ ) {
 		var anchor = anchors[i];
 		anchor.target = "_blank";
 		Event.observe( anchor,"click",listener );
 	}
-	
+
 	var forms = document.getElementsByTagName("form");
 	for( var i=0;i<forms.length;i++ ) {
 		var form = forms[i];

@@ -3,20 +3,15 @@
 <Module>
 	<ModulePrefs title="__MSG_title__">
 		<Require feature="dynamic-height"/>
-		<Locale lang="ja">
-			<msg name="title">標準時時計</msg> 
-			<msg name="lb_contentLink">コンテンツクリック時のリンク先</msg>
-		</Locale>
-		<Locale>
-			<msg name="title">World clock</msg> 
-			<msg name="lb_contentLink">Linked Websites of contents click</msg>
-		</Locale>
+		<Locale messages="ALL_ALL.xml" />
+		<Locale lang="ja" messages="ja_ALL.xml"/>
+		<Locale lang="zh" messages="zh_ALL.xml"/>
 		<Icon>__IS_GADGET_BASE_URL__/clock-globe.gif</Icon>
 	</ModulePrefs>
 	<WidgetPref datatype="string" display_name="__MSG_lb_contentLink__" name="contentLink" value=""/>
 
 	<Header maximize="off" refresh="off"/>
-	
+
 	<Content type="html" view="home"><![CDATA[
 <style type="text/css"><!--
 body{
@@ -48,28 +43,11 @@ body{
 }
 --></style>
 <div id="worldclock">
-	<div class="country"><image src='__IS_GADGET_BASE_URL__/imgs/jp.png'>&nbsp;&nbsp;TYO:</div>
-	<div class="date" id="jp_date"></div>
-	<div>
-		<span class="time" id="jp_time"></span>
-		<span class="hide" id="jp_dst"><image src='__IS_GADGET_BASE_URL__/imgs/dst.gif'></span>
-	</div>
-	<hr />
-	<div class="country"><image src='__IS_GADGET_BASE_URL__/imgs/gb.png'>&nbsp;&nbsp;LDN:</div>
-	<div class="date" id="uk_date"></div>
-	<div>
-		<span class="time" id="uk_time"></span>
-		<span class="hide" id="uk_dst"><image src='__IS_GADGET_BASE_URL__/imgs/dst.gif'></span>
-	</div>
-	<hr />
-	<div class="country"><image src='__IS_GADGET_BASE_URL__/imgs/us.png'>&nbsp;&nbsp;NYC:</div>
-	<div class="date" id="et_date"></div>
-	<div>
-		<span class="time" id="et_time"></span>
-		<span class="hide" id="et_dst"><image src='__IS_GADGET_BASE_URL__/imgs/dst.gif'></span>
-	</div>
 </div>
 
-<script type="text/javascript">is_loadScript("__IS_GADGET_BASE_URL__/worldclock.js")</script>
+<script type="text/javascript">
+	var baseURL = "__IS_GADGET_BASE_URL__";
+	is_loadScript("__IS_GADGET_BASE_URL__/worldclock.js");
+</script>
 	]]></Content>
 </Module>

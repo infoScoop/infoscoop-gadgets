@@ -353,7 +353,9 @@ TodoList.prototype.classDef = function() {
 			selectNode.appendChild( opt );
 		}
 		if( !Browser.isSafari1 )
-			Event.observe( selectNode, 'mousedown', stopEvent, false, priorityNode.id);
+			Event.observe( selectNode, 'mousedown', function(e){
+				if(e && e.stopPropagation)e.stopPropagation();
+			}, false, priorityNode.id);
 		Event.observe( selectNode, 'change', this.selectedPriority.bind(this, selectNode), false, priorityNode.id);
 		Event.observe( selectNode, 'blur', this.selectedPriority.bind(this, selectNode), false, priorityNode.id);
 		

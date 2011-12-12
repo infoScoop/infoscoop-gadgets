@@ -2,10 +2,10 @@
 var prefs = new gadgets.Prefs();
 prefs.setDontEscape_();
 
-var table = $("table__WIDGET_ID__");
-var smallDiv = $("small");
-var titleDiv= $("title");
-var timeDiv= $("time");
+var table = _gel("table__WIDGET_ID__");
+var smallDiv = _gel("small");
+var titleDiv= _gel("title");
+var timeDiv= _gel("time");
 
 var alarmFunc = {
 	alert : function() {
@@ -187,10 +187,13 @@ function replaceAll( msg,param ) {
 
 function validate() {
 	var errors = [];
-	errors.push( Validate.hour( prefs.getString("hour")));
-	errors.push( Validate.minute( prefs.getString("minute")));
 	
-	errors = errors.compact();
+	var errMsg1 = Validate.hour( prefs.getString("hour"));
+	var errMsg2 = Validate.minute( prefs.getString("minute"));
+	
+	if(errMsg1)	errors.push(errMsg1);
+	if(errMsg2)	errors.push(errMsg2);
+	
 	if( errors.length == 0 )
 		return true;
 	

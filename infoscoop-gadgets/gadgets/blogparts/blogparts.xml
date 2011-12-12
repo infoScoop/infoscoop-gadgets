@@ -54,14 +54,14 @@ function main() {
 	for( var i=0;i<anchors.length;i++ ) {
 		var anchor = anchors[i];
 		anchor.target = "_blank";
-		Event.observe( anchor,"click",listener );
+		anchor.onclick = listener;
 	}
 
 	var forms = document.getElementsByTagName("form");
 	for( var i=0;i<forms.length;i++ ) {
 		var form = forms[i];
 		form.target = "_blank";
-		Event.observe( form,"submit",listener );
+		form.onsubmit = listener;
 	}
 }
 

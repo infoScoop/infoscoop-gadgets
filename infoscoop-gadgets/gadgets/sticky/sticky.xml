@@ -63,6 +63,17 @@
 	<textarea id="editor"></textarea>
 </div>
 
-<script type="text/javascript">is_loadScript("__IS_GADGET_BASE_URL__/sticky.js")</script>
+<script type="text/javascript">
+	var is_loadScript = function( src ) {
+		var head = document.getElementsByTagName("head")[0];
+		var script = document.createElement("script");
+		script.type = "text/javascript";
+		script.src = src;
+		
+		head.appendChild( script );
+	}
+	
+	is_loadScript("__IS_GADGET_BASE_URL__/sticky.js")
+</script>
 	]]></Content>
 </Module>

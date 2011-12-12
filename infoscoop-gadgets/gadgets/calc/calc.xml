@@ -105,7 +105,20 @@
 </td>
 </tr>
 </table>
+<script src="__IS_GADGET_BASE_URL__/prototype-1.6.0.3-min.js"></script>
+<script src="__IS_GADGET_BASE_URL__/browser.js"></script>
 
-<script type="text/javascript">is_loadScript("__IS_GADGET_BASE_URL__/calc.js")</script>
+<script type="text/javascript">
+	var is_loadScript = function( src ) {
+		var head = document.getElementsByTagName("head")[0];
+		var script = document.createElement("script");
+		script.type = "text/javascript";
+		script.src = src;
+		
+		head.appendChild( script );
+	}
+	
+	is_loadScript("__IS_GADGET_BASE_URL__/calc.js")
+</script>
 	]]></Content>
 </Module>

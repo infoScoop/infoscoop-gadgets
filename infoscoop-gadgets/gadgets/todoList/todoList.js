@@ -1,5 +1,4 @@
-TodoList = IS_Class.create();
-TodoList.prototype.classDef = function() {
+var TodoList = function() {
 	var self = this;
 	
 	var prefs = new gadgets.Prefs();
@@ -851,5 +850,59 @@ TodoList.prototype.classDef = function() {
 	}
 }
 
+function getWindowHeight(){
+	return (window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight || 0);
+}
+
+function getNodeID(parent, id) {
+	var ln = parent.childNodes.length;
+	for (var z=0; z<ln; z++) {
+		if (parent.childNodes[z].id == id) return parent.childNodes[z];
+	}
+	return null;
+}
+
+function findPosX(obj) {
+    var pos = 0;
+    while (obj != null) {
+        pos += obj.offsetLeft;
+        obj = (obj.offsetParent)? obj.offsetParent : null;
+    }
+    return pos;
+}
+
+function findPosY(obj) {
+    var pos = 0;
+    while (obj != null) {
+        pos += obj.offsetTop;
+        obj = (obj.offsetParent)? obj.offsetParent : null;
+    }
+    return pos;
+}
+
+function getWindowSize(flag) {
+  var offset = 0;
+  if( typeof( window.innerWidth ) == 'number' ) {
+    offset = window["inner" + ((flag)? "Width" : "Height")];
+  } else if( document.documentElement &&
+      ( document.body.offsetWidth || document.body.offsetHeight ) ) {
+    offset = document.body["offset" + ((flag)? "Width" : "Height")];
+  }
+
+  return offset;
+}
+
+function isInObject(x,y,id) {
+	var obj = document.getElementById(id);
+	if(!obj)return false;
+	var posx = findPosX(obj);
+	var posy = findPosY(obj);
+	/*alert ("x :" + x + " y: " + y + " posx : " + posx + " posy :" + posy + " height :" + obj.offsetHeight + 
+			" width :" + obj.offsetWidth);*/
+	return (x>=posx && x<posx+obj.offsetWidth &&
+			y>=posy && y<posy+obj.offsetHeight);
+}
+
 var instance = new TodoList();
+instance.initialize();
 instance.loadContents();

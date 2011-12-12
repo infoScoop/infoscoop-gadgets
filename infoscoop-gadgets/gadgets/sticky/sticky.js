@@ -6,10 +6,15 @@ var fontSize = prefs.getInt("fontSize");
 if( isNaN( fontSize ))
 	fontSize = 12;
 
-var textBody = $("editor");
+var textBody = _gel("editor");
+/*
 Event.observe( textBody, "keyup", setRows );
 Event.observe( textBody, "blur", saveSticky );
 Event.observe( window, "resize", setCols );
+*/
+textBody.onkeyup = setRows;
+textBody.onkblur = saveSticky;
+window.onresize = setCols;
 
 displaySticky();
 
@@ -44,7 +49,7 @@ function displaySticky() {
 }
 
 function saveSticky() {
-	var text = $("editor").value;
+	var text = _gel("editor").value;
 	// Replace texts because line break becomes empty character in xml
 	text = text.replace(/\//g,"//");
 	text = text.replace(/\r/g,"/r");
@@ -54,13 +59,13 @@ function saveSticky() {
 	prefs.set("sticky_data", text);
 }
 function setCols() {
-	var textarea = $("editor");
+	var textarea = _gel("editor");
 	textarea.setAttribute("cols", Math.floor( textarea.clientWidth / fontSize));
 	setRows();
 }
 
 function setRows() {
-	var textarea = $("editor");
+	var textarea = _gel("editor");
 	var colNum = 2;
 	var chars = 0;
 

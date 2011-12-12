@@ -46,6 +46,15 @@ body{
 </div>
 
 <script type="text/javascript">
+	var is_loadScript = function( src ) {
+		var head = document.getElementsByTagName("head")[0];
+		var script = document.createElement("script");
+		script.type = "text/javascript";
+		script.src = src;
+		
+		head.appendChild( script );
+	}
+	
 	var baseURL = "__IS_GADGET_BASE_URL__";
 	is_loadScript("__IS_GADGET_BASE_URL__/worldclock.js");
 </script>

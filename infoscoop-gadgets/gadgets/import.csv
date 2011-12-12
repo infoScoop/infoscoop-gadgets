@@ -12,6 +12,8 @@
 ,"alarm","/","zh_ALL.xml",<LOB FILE='alarm/zh_ALL.xml' />
 ,"calc","/","calc.xml",<LOB FILE='calc/calc.xml' />
 ,"calc","/","calc.js",<LOB FILE='calc/calc.js' />
+,"calc","/","browser.js",<LOB FILE='calc/browser.js' />
+,"calc","/","prototype-1.6.0.3-min.js",<LOB FILE='calc/prototype-1.6.0.3-min.js' />
 ,"calc","/","calculator.gif",<LOB FILE='calc/calculator.gif' />
 ,"calc","/","ALL_ALL.xml",<LOB FILE='calc/ALL_ALL.xml' />
 ,"calc","/","ja_ALL.xml",<LOB FILE='calc/ja_ALL.xml' />
@@ -34,6 +36,8 @@
 ,"worldclock","/","zh_ALL.xml",<LOB FILE='worldclock/zh_ALL.xml' />
 ,"todoList","/","todoList.xml",<LOB FILE='todoList/todoList.xml' />
 ,"todoList","/","todoList.js",<LOB FILE='todoList/todoList.js' />
+,"todoList","/","browser.js",<LOB FILE='todoList/browser.js' />
+,"todoList","/","prototype-1.6.0.3-min.js",<LOB FILE='todoList/prototype-1.6.0.3-min.js' />
 ,"todoList","/","tick.gif",<LOB FILE='todoList/tick.gif' />
 ,"todoList","/imgs","trash.gif",<LOB FILE='todoList/imgs/trash.gif' />
 ,"todoList","/","ALL_ALL.xml",<LOB FILE='todoList/ALL_ALL.xml' />

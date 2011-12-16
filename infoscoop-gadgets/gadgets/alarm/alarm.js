@@ -166,7 +166,8 @@ function alarm() {
 	if( !prefs.getBool("alarmed")) {
 		alarmFunc[prefs.getString("method")]();
 		
-		Element.addClassName( document.body,"alarmed");
+//		Element.addClassName( document.body,"alarmed");
+		document.body.className = "alarmed";
 		
 		prefs.set("alarmed", true);
 	}

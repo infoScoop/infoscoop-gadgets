@@ -13,7 +13,7 @@ Event.observe( textBody, "blur", saveSticky );
 Event.observe( window, "resize", setCols );
 */
 textBody.onkeyup = setRows;
-textBody.onkblur = saveSticky;
+textBody.onblur = saveSticky;
 window.onresize = setCols;
 
 displaySticky();

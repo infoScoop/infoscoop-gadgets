@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Module>
-	<ModulePrefs title="__MSG_title__" scroll="yes">
+	<ModulePrefs title="__MSG_title__" scrolling="true">
 		<Require feature="dynamic-height"/>
 		<Locale messages="ALL_ALL.xml" />
 		<Locale lang="ja" messages="ja_ALL.xml"/>

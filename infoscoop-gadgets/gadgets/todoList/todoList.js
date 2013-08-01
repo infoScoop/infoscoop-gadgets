@@ -355,9 +355,14 @@ var TodoList = function() {
 			Event.observe( selectNode, 'mousedown', function(e){
 				if(e && e.stopPropagation)e.stopPropagation();
 			}, false, priorityNode.id);
+		// For when occurring blur event (in Android 4.0)
+		if (navigator.userAgent.toLowerCase().indexOf("android") != -1)
+			selectNode.setAttribute("blurable", "true");
+			Event.observe(selectNode, "click", function() {
+				selectNode.setAttribute("blurable", "false");
+			});
 		Event.observe( selectNode, 'change', this.selectedPriority.bind(this, selectNode), false, priorityNode.id);
 		Event.observe( selectNode, 'blur', this.selectedPriority.bind(this, selectNode), false, priorityNode.id);
-		
 		priorityNode.parentNode.appendChild( selectNode );
 		
 		this.selectPriorityNode = selectNode;
@@ -366,7 +371,15 @@ var TodoList = function() {
 	}
 	
 	// Reflect the selected priority
-	this.selectedPriority = function( selectNode ){
+	this.selectedPriority = function(selectNode) {
+		if (navigator.userAgent.toLowerCase().indexOf("android") != -1) {
+			if (event.type == "blur" && selectNode.getAttribute("blurable") == "false") {
+				selectNode.setAttribute("blurable", "true");
+				return;
+			} else if (event.type == "change") {
+				selectNode.setAttribute("blurable", "false");
+			}
+		}
 		// Restore width
 		if( !Browser.isIE ){
 			this.elm_todoListTable.style.tableLayout = '';

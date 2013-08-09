@@ -14,6 +14,7 @@ Event.observe( window, "resize", setCols );
 */
 textBody.onkeyup = setRows;
 textBody.onblur = saveSticky;
+textBody.style.lineHeight = '110%';
 window.onresize = setCols;
 
 displaySticky();
@@ -80,8 +81,9 @@ function setRows() {
 			chars = 0;
 		}
 	}
+	var lineHeight = fontSize*(parseInt(textarea.style.lineHeight)/100)
 	textarea.rows = colNum;
-	textarea.style.height = ( colNum *fontSize ) + "px";
+	textarea.style.height = ( colNum *lineHeight ) + "px";
 	
 	gadgets.window.adjustHeight();
 }

@@ -1,0 +1,5 @@
+/bin
+infoscoop-gadget/dist
+.project
+.classpath
+infoscoop-gadget/.project

@@ -45,7 +45,7 @@
 	<!-- get directory name -->
 	<target name="getdirname">
 		<echo message="${gadget.dirname}"/>
-		<propertyregex property="zip.target.name" input="${gadget.dirname}" regexp="([^/]+)$" select="\0" casesensitive="false" />
+		<propertyregex property="zip.target.name" input="${gadget.dirname}" regexp="([^/\\]+)$" select="\0" casesensitive="false" />
 		<zip basedir="${basedir}/gadgets/${zip.target.name}" destfile="${basedir}/dist/gadget_files/${zip.target.name}.zip">
 			<exclude name="svn/*"/>
 		</zip>

@@ -116,6 +116,63 @@ body.large {
 	margin-top:2px;
 	margin-bottom:1px;
 }
+
+@media only screen and 
+(min-device-width : 768px) and 
+(max-device-width : 1024px) {
+	body {
+		color: #34495E;
+		
+	}
+
+	body,
+	.todoAddTable,
+	.todoAddTable input {
+		font-size: 14px;
+	}
+
+	.todoAddTable input[type="button"]{
+		background-color: rgba(127, 140, 141, 0.6);
+		padding: 5px 10px;
+		border: none;
+		color: #ffffff;
+		border-radius: 3px;
+		-moz-border-radius: 3px;
+		-webkit-border-radius: 3px;
+		-webkit-appearance: none;
+	}
+
+	.todoAddTextBox {
+		padding: 5px;
+		border: 1px solid rgba(127, 140, 141,0.3);
+		border-radius: 3px;
+		-moz-border-radius: 3px;
+		-webkit-border-radius: 3px;
+		-webkit-appearance: none;
+	}
+
+	.todoItemOdd {
+		background-color: rgba(127, 140, 141,0.15);
+	}
+
+	.todoText {
+		display: inline-block;
+		padding: 5px;
+	}
+
+	.todoPriority {
+		padding: 5px;
+	}
+
+	.todoCheck {
+		margin: 5px;
+	}
+
+	.todoDelete {
+		margin: 4px 5px 5px 5px
+	}
+
+}
 </style>
 <script src="__IS_GADGET_BASE_URL__/prototype-1.6.0.3-min.js"></script>
 <script src="__IS_GADGET_BASE_URL__/browser.js"></script>

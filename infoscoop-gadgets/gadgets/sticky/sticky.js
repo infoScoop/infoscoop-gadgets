@@ -7,6 +7,7 @@ if( isNaN( fontSize ))
 	fontSize = 12;
 
 var textBody = _gel("editor");
+var content = _gel("content");
 /*
 Event.observe( textBody, "keyup", setRows );
 Event.observe( textBody, "blur", saveSticky );
@@ -16,6 +17,9 @@ textBody.onkeyup = setRows;
 textBody.onblur = saveSticky;
 textBody.style.lineHeight = '110%';
 window.onresize = setCols;
+
+textBody.onclick = deactivateEvent;
+content.onclick = focusTextBody;
 
 displaySticky();
 
@@ -86,4 +90,17 @@ function setRows() {
 	textarea.style.height = ( colNum *lineHeight ) + "px";
 	
 	gadgets.window.adjustHeight();
+}
+
+function focusTextBody() {
+	textBody.focus();
+	if (window.getSelection) {
+		textBody.selectionStart = textBody.selectionEnd = textBody.value.length;
+	}
+}
+
+function deactivateEvent(e) {
+	if(e && e.stopPropagation){
+		e.stopPropagation();
+	}
 }

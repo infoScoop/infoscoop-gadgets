@@ -58,11 +58,65 @@ body.alarmed {
 	background-color: #FFFF00;
 }
 
-</style>
+@media only screen and 
+(min-device-width : 768px) and 
+(max-device-width : 1024px) {
+	#main {
+		font-family: 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic ProN', 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
+		position:fixed;
+		top:0px;
+		left:0px;
+		bottom:0px;
+		right:0px;
+		margin:0px;
+	}
 
-<div id="small"></div>
-<div id="title"></div>
-<div id="time"></div>
+	#content {
+		display : table;
+		width : 100%;
+		height : 100%;
+		color: #34495E;
+		font-size: 16px;
+		line-height: 20px;
+	}
+	
+	#content-inner {
+		display : table-cell;
+		vertical-align: middle;
+	}
+	
+	#small {
+		font-size: inherit;
+	}
+	
+	#time {
+		color: #2980b9;
+		font-size: 200%;
+		margin-top: 0.3em;
+		margin-bottom: 0.3em;
+		line-height: 1.5em;
+	}
+	
+	
+	body.alarmed {
+		background-color: #f39c12;
+	}
+	.alarmed #content,
+	.alarmed #time {
+		color: #fff;
+	}
+}
+
+</style>
+<div id="main">
+	<div id="content">
+		<div id="content-inner">
+			<div id="small"></div>
+			<div id="title"></div>
+			<div id="time"></div>
+		</div>
+	</div>
+</div>
 
 <script type="text/javascript">
 	var is_loadScript = function( src ) {

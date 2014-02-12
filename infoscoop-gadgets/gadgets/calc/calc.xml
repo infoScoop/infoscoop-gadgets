@@ -165,8 +165,8 @@
 		<td class="btn"><input type="button" value="3" id="num3"/></td>
 		<td class="btn"><input type="button" value="*" id="multiply"/></td>
 	</tr><tr>
-		<td class="btn"><input type="button" value="." id="dot"/></td>
 		<td class="btn"><input type="button" value="0" id="num0"/></td>
+		<td class="btn"><input type="button" value="." id="dot"/></td>
 		<td class="btn"><input type="button" value="=" id="equal"/></td>
 		<td class="btn"><input type="button" value="/" id="divide"/></td>
 	</tr>

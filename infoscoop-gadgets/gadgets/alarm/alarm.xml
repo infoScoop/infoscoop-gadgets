@@ -91,7 +91,7 @@
 	}
 	
 	is_loadLink("__IS_GADGET_BASE_URL__/css/alarm.css");
-	is_loadLink("__IS_GADGET_BASE_URL__/css/alarm_tablet.css");
+	is_loadLink("__IS_GADGET_BASE_URL__/css/alarm-tablet.css");
 	is_loadScript("__IS_GADGET_BASE_URL__/alarm.js");
 </script>
 	]]></Content>

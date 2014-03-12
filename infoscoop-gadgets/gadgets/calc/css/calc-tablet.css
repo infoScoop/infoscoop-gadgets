@@ -1,0 +1,65 @@
+#table {
+	background-color: #fff;
+	border: none;
+	width: 100%;
+	table-layout: fixed;
+	margin: 0;
+}
+
+/* display */
+#table tr:first-child table{
+	border-spacing: 0px;
+	margin: 0px;
+}
+
+#display{
+	font-size: 28px;
+	color: #34495E;
+	padding: 0;
+	margin: 0.2em 0;
+	width: 100%;
+	border: none!important;
+	-webkit-appearance: none;
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+#operation {
+	font-size: 28px;
+	text-align: center;
+	color: #34495E;
+	padding: 0;
+	margin: 0.2em 0;
+}
+
+.btn {
+	border: 1px solid #fff;
+	padding: 0;
+}
+
+.btn input {
+	font-size: 18px;
+	color: #34495E;
+	border: none;
+	width: 100%;
+	padding: 0.5em;
+	outline: none;
+	background-color: rgba(127, 140, 141,0.15);
+	-moz-border-radius: 0;
+	-webkit-border-radius: 0;
+	border-radius: 0;
+	-webkit-appearance:none;
+}
+
+/* operation button */
+#add,
+#subtract,
+#multiply,
+#divide,
+#allClear {
+	background-color: rgba(127, 140, 141, 0.3);
+}
+
+#equal {
+	color: #fff;
+	background-color: #f39c12;
+}

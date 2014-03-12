@@ -1,0 +1,27 @@
+body{
+	margin:0;
+}
+#worldclock{
+	border:1px #eef;
+	padding:5px;
+	font-family:arial;
+	font-size:10pt;
+	font-weight:bold;
+	text-align:center;
+}
+.country{
+	font-family:san-serif;
+	font-size:8pt;
+	color:gray;
+}
+.date{
+	font-family:san-serif;
+	font-size:8pt;
+	color:gray;
+}
+.hide{
+	display:none;
+}
+.show{
+	display:inline;
+}

@@ -1,0 +1,32 @@
+*,body {
+	margin: 0;
+	padding: 0;
+}
+
+#small,#title,#time {
+	text-align: center;
+}
+#small {
+	font-size: 80%;
+}
+
+#title {
+	word-break: break-all;
+}
+
+#title .message {
+	margin: 0.5em 0;
+}
+#title .error {
+	font-size: 10.5pt;
+	color: red;
+}
+
+#time {
+	font-weight: bold;
+	font-size: 150%;
+}
+
+body.alarmed {
+	background-color: #FFFF00;
+}

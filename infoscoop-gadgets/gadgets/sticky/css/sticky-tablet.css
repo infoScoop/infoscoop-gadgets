@@ -1,0 +1,8 @@
+#content {
+	height: 100%;
+}
+
+#editor:focus {
+	outline: none !important;
+	
+}

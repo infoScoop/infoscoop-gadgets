@@ -1,0 +1,95 @@
+body.large {
+	font-size: 125%;
+}
+.todoAddTable, .todoAddTableTd, .todoAddTextBox{
+	width:100%;
+}
+
+.todoListTable {
+	width: 100%;
+/*	table-layout: fixed;*/
+	background-color: #ffffff;
+	font-size: 85%;
+}
+
+.todoItemOdd {
+	cursor: move;
+	font-family: Helvetica, Arial, sans-serif;
+	background-color: #dbdcde;
+}
+
+.todoItemEven {
+	cursor: move;
+	font-family: Helvetica, Arial, sans-serif;
+	background-color: #ffffff;
+}
+
+.todoItemOddMark {
+	cursor: move;
+	font-family: Helvetica, Arial, sans-serif;
+
+	background-color: #ccddd5;
+}
+
+.todoItemEvenMark {
+	cursor: move;
+	font-family: Helvetica, Arial, sans-serif;
+
+	background-color: #ccddd5;
+}
+
+.todoFloatItem {
+	position:absolute;
+	z-index:900;
+	filter:alpha(opacity=70);
+	-moz-opacity:0.7;
+	opacity:0.7;
+}
+
+.todoPriorityTd {
+	width: 1.5em;
+}
+.todoPriority {
+	text-align: center;
+	cursor: pointer;
+	color: #4c4c4c;
+	font-size: 90%;
+}
+
+.todoTextTd {
+	width: 100%;
+	overflow: hidden;
+}
+.todoTextDiv {
+	cursor: move;
+	overflow: hidden;
+	width: 100%;
+	word-break: break-all;
+}
+.todoText {
+	text-align: left;
+	cursor: default;
+}
+.todoTextEdit {
+	width: 100%;
+}
+
+.todoCheckTd {
+	text-align: center;
+/*	width: 1.2em;*/
+	width: 20px;
+}
+.todoCheck {
+	cursor: pointer;
+}
+
+.todoDeleteTd {
+/*	width: 1.2em;*/
+	width: 20px;
+}
+.todoDelete {
+	float: center;
+	cursor: pointer;
+	margin-top:2px;
+	margin-bottom:1px;
+}

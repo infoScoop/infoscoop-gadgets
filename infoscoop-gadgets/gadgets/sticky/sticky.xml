@@ -34,46 +34,47 @@
 	
 	<Content type="html" view="home"><![CDATA[
 <style type="text/css">
-*,body {
-	margin: 0;
-	padding: 0;
-}
-
 #editor {
-	width:	100%;
-	border: none;
-	padding-right: 5px;
-	padding-left: 5px;
-	padding-top: 5px;
-	overflow:	hidden;
-	font-family: "courier";
-	letter-spacing: 0;
-	color:	__UP_fgColor__;
-	font-size: 12px;
+	color: __UP_fgColor__;
 	font-size: __UP_fontSize__px;
 }
 #content {
-	background-color:	__UP_bgColor__;
+	background-color: __UP_bgColor__;
 }
+</style>
+<div id="content">
+	<textarea id="editor"></textarea>
+</div>
 
-#editor {
-	background-color: transparent;
-}
-
-@media only screen and 
-(min-device-width : 768px) and 
-(max-device-width : 1024px) {
-	html {
-		background-color:	__UP_bgColor__;
-	}
-	#content {
-		height: 100%;
+<script type="text/javascript">
+	var head = document.getElementsByTagName("head")[0];
+	
+	var is_loadLink = function( href ) {
+		var link = document.createElement("link");
+		link.rel =  "stylesheet";
+		link.type = "text/css";
+		link.href = href;
+		
+		head.appendChild( link );
 	}
 	
-	#editor:focus {
-		outline: none !important;
+	var is_loadScript = function( src ) {
+		var script = document.createElement("script");
+		script.type = "text/javascript";
+		script.src = src;
 		
+		head.appendChild( script );
 	}
+	
+	is_loadLink("__IS_GADGET_BASE_URL__/css/sticky.css");
+	is_loadScript("__IS_GADGET_BASE_URL__/sticky.js")
+</script>
+	]]></Content>
+	
+	<Content type="html" view="tablet"><![CDATA[
+<style type="text/css">
+html {
+	background-color:	__UP_bgColor__;
 }
 
 </style>
@@ -83,8 +84,18 @@
 </div>
 
 <script type="text/javascript">
+	var head = document.getElementsByTagName("head")[0];
+	
+	var is_loadLink = function( href ) {
+		var link = document.createElement("link");
+		link.rel =  "stylesheet";
+		link.type = "text/css";
+		link.href = href;
+		
+		head.appendChild( link );
+	}
+	
 	var is_loadScript = function( src ) {
-		var head = document.getElementsByTagName("head")[0];
 		var script = document.createElement("script");
 		script.type = "text/javascript";
 		script.src = src;
@@ -92,6 +103,8 @@
 		head.appendChild( script );
 	}
 	
+	is_loadLink("__IS_GADGET_BASE_URL__/css/sticky.css");
+	is_loadLink("__IS_GADGET_BASE_URL__/css/sticky-tablet.css");
 	is_loadScript("__IS_GADGET_BASE_URL__/sticky.js")
 </script>
 	]]></Content>

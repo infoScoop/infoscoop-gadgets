@@ -19,161 +19,6 @@
 	<UserPref datatype="hidden" name="todoList" display_name="__MSG_todoList__" default_value=""/>
 	<Header refresh="off" maximize="off"/>
 	<Content type="html" view="home"><![CDATA[
-<style>
-/* todoList */
-body.large {
-	font-size: 125%;
-}
-.todoAddTable, .todoAddTableTd, .todoAddTextBox{
-	width:100%;
-}
-
-.todoListTable {
-	width: 100%;
-/*	table-layout: fixed;*/
-	background-color: #ffffff;
-	font-size: 85%;
-}
-
-.todoItemOdd {
-	cursor: move;
-	font-family: Helvetica, Arial, sans-serif;
-	background-color: #dbdcde;
-}
-
-.todoItemEven {
-	cursor: move;
-	font-family: Helvetica, Arial, sans-serif;
-	background-color: #ffffff;
-}
-
-.todoItemOddMark {
-	cursor: move;
-	font-family: Helvetica, Arial, sans-serif;
-
-	background-color: #ccddd5;
-}
-
-.todoItemEvenMark {
-	cursor: move;
-	font-family: Helvetica, Arial, sans-serif;
-
-	background-color: #ccddd5;
-}
-
-.todoFloatItem {
-	position:absolute;
-	z-index:900;
-	filter:alpha(opacity=70);
-	-moz-opacity:0.7;
-	opacity:0.7;
-}
-
-.todoPriorityTd {
-	width: 1.5em;
-}
-.todoPriority {
-	text-align: center;
-	cursor: pointer;
-	color: #4c4c4c;
-	font-size: 90%;
-}
-
-.todoTextTd {
-	width: 100%;
-	overflow: hidden;
-}
-.todoTextDiv {
-	cursor: move;
-	overflow: hidden;
-	width: 100%;
-	word-break: break-all;
-}
-.todoText {
-	text-align: left;
-	cursor: default;
-}
-.todoTextEdit {
-	width: 100%;
-}
-
-.todoCheckTd {
-	text-align: center;
-/*	width: 1.2em;*/
-	width: 20px;
-}
-.todoCheck {
-	cursor: pointer;
-}
-
-.todoDeleteTd {
-/*	width: 1.2em;*/
-	width: 20px;
-}
-.todoDelete {
-	float: center;
-	cursor: pointer;
-	margin-top:2px;
-	margin-bottom:1px;
-}
-
-@media only screen and 
-(min-device-width : 768px) and 
-(max-device-width : 1024px) {
-	body {
-		color: #34495E;
-		
-	}
-
-	body,
-	.todoAddTable,
-	.todoAddTable input {
-		font-size: 14px;
-	}
-
-	.todoAddTable input[type="button"]{
-		background-color: rgba(127, 140, 141, 0.6);
-		padding: 5px 10px;
-		border: none;
-		color: #ffffff;
-		border-radius: 3px;
-		-moz-border-radius: 3px;
-		-webkit-border-radius: 3px;
-		-webkit-appearance: none;
-	}
-
-	.todoAddTextBox {
-		padding: 5px;
-		border: 1px solid rgba(127, 140, 141,0.3);
-		border-radius: 3px;
-		-moz-border-radius: 3px;
-		-webkit-border-radius: 3px;
-		-webkit-appearance: none;
-	}
-
-	.todoItemOdd {
-		background-color: rgba(127, 140, 141,0.15);
-	}
-
-	.todoText {
-		display: inline-block;
-		padding: 5px;
-	}
-
-	.todoPriority {
-		padding: 5px;
-	}
-
-	.todoCheck {
-		margin: 5px;
-	}
-
-	.todoDelete {
-		margin: 4px 5px 5px 5px
-	}
-
-}
-</style>
 <script src="__IS_GADGET_BASE_URL__/prototype-1.6.0.3-min.js"></script>
 <script src="__IS_GADGET_BASE_URL__/browser.js"></script>
 
@@ -181,8 +26,18 @@ body.large {
 is_gadgetBaseUrl = "__IS_GADGET_BASE_URL__";
 </script>
 <script type="text/javascript">
+	var head = document.getElementsByTagName("head")[0];
+	
+	var is_loadLink = function( href ) {
+		var link = document.createElement("link");
+		link.rel =  "stylesheet";
+		link.type = "text/css";
+		link.href = href;
+		
+		head.appendChild( link );
+	}
+	
 	var is_loadScript = function( src ) {
-		var head = document.getElementsByTagName("head")[0];
 		var script = document.createElement("script");
 		script.type = "text/javascript";
 		script.src = src;
@@ -190,7 +45,41 @@ is_gadgetBaseUrl = "__IS_GADGET_BASE_URL__";
 		head.appendChild( script );
 	}
 	
-	is_loadScript("__IS_GADGET_BASE_URL__/todoList.js")
+	is_loadLink("__IS_GADGET_BASE_URL__/css/todoList.css");
+	is_loadScript("__IS_GADGET_BASE_URL__/todoList.js");
+</script>
+	]]></Content>
+	
+	<Content type="html" view="tablet"><![CDATA[
+<script src="__IS_GADGET_BASE_URL__/prototype-1.6.0.3-min.js"></script>
+<script src="__IS_GADGET_BASE_URL__/browser.js"></script>
+
+<script type="text/javascript">
+is_gadgetBaseUrl = "__IS_GADGET_BASE_URL__";
+</script>
+<script type="text/javascript">
+	var head = document.getElementsByTagName("head")[0];
+	
+	var is_loadLink = function( href ) {
+		var link = document.createElement("link");
+		link.rel =  "stylesheet";
+		link.type = "text/css";
+		link.href = href;
+		
+		head.appendChild( link );
+	}
+	
+	var is_loadScript = function( src ) {
+		var script = document.createElement("script");
+		script.type = "text/javascript";
+		script.src = src;
+		
+		head.appendChild( script );
+	}
+	
+	is_loadLink("__IS_GADGET_BASE_URL__/css/todoList.css");
+	is_loadLink("__IS_GADGET_BASE_URL__/css/todoList-tablet.css");
+	is_loadScript("__IS_GADGET_BASE_URL__/todoList.js");
 </script>
 	]]></Content>
 </Module>

@@ -1,0 +1,20 @@
+*,body {
+	margin: 0;
+	padding: 0;
+}
+
+#editor {
+	width:	100%;
+	border: none;
+	padding-right: 5px;
+	padding-left: 5px;
+	padding-top: 5px;
+	overflow:	hidden;
+	font-family: "courier";
+	letter-spacing: 0;
+	font-size: 12px;
+}
+
+#editor {
+	background-color: transparent;
+}

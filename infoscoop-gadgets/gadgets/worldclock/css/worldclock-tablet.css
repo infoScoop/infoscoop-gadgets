@@ -2,24 +2,8 @@ body {
 	color: #34495E;
 }
 
-#main {
-	position:fixed;
-	top:0px;
-	left:0px;
-	bottom:0px;
-	right:0px;
-	margin:0px;
-}
-
-#content {
-	display : table;
-	width : 100%;
-	height : 100%;
-}
-
 #worldclock {
-	display : table-cell;
-	vertical-align: middle;
+	margin: 10px;
 	font-size: 13pt;
 	font-weight: normal;
 }

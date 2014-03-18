@@ -10,14 +10,18 @@ body,
 }
 
 .todoAddTable input[type="button"]{
-	background-color: rgba(127, 140, 141, 0.6);
-	padding: 5px 10px;
+	background-color: rgba(127, 140, 141, 0.7);
+	padding: 4px 12px;
 	border: none;
 	color: #ffffff;
 	border-radius: 3px;
 	-moz-border-radius: 3px;
 	-webkit-border-radius: 3px;
 	-webkit-appearance: none;
+}
+
+.todoAddTable input[type="button"]:active {
+	background-color: rgba(127, 140, 141, 0.5);
 }
 
 .todoAddTextBox {

@@ -1,15 +1,13 @@
 #main {
 	font-family: 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic ProN', 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
-	position:fixed;
-	top:0px;
-	left:0px;
-	bottom:0px;
-	right:0px;
-	margin:0px;
+	display : table;
+	padding: 10px 0px;
+	width : 100%;
+	height : 100%;
 }
 
 #content {
-	display : table;
+	display : table-row;
 	width : 100%;
 	height : 100%;
 	color: #34495E;

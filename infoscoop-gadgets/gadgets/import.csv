@@ -4,12 +4,16 @@
 ,"sticky","/","ALL_ALL.xml",<LOB FILE='sticky/ALL_ALL.xml' />
 ,"sticky","/","ja_ALL.xml",<LOB FILE='sticky/ja_ALL.xml' />
 ,"sticky","/","zh_ALL.xml",<LOB FILE='sticky/zh_ALL.xml' />
+,"sticky","/css","sticky-tablet.css",<LOB FILE='sticky/css/sticky-tablet.css' />
+,"sticky","/css","sticky.css",<LOB FILE='sticky/css/sticky.css' />
 ,"alarm","/","alarm.xml",<LOB FILE='alarm/alarm.xml' />
 ,"alarm","/","alarm.js",<LOB FILE='alarm/alarm.js' />
 ,"alarm","/","clock.gif",<LOB FILE='alarm/clock.gif' />
 ,"alarm","/","ALL_ALL.xml",<LOB FILE='alarm/ALL_ALL.xml' />
 ,"alarm","/","ja_ALL.xml",<LOB FILE='alarm/ja_ALL.xml' />
 ,"alarm","/","zh_ALL.xml",<LOB FILE='alarm/zh_ALL.xml' />
+,"alarm","/css","alarm-tablet.css",<LOB FILE='alarm/css/alarm-tablet.css' />
+,"alarm","/css","alarm.css",<LOB FILE='alarm/css/alarm.css' />
 ,"calc","/","calc.xml",<LOB FILE='calc/calc.xml' />
 ,"calc","/","calc.js",<LOB FILE='calc/calc.js' />
 ,"calc","/","browser.js",<LOB FILE='calc/browser.js' />
@@ -18,6 +22,8 @@
 ,"calc","/","ALL_ALL.xml",<LOB FILE='calc/ALL_ALL.xml' />
 ,"calc","/","ja_ALL.xml",<LOB FILE='calc/ja_ALL.xml' />
 ,"calc","/","zh_ALL.xml",<LOB FILE='calc/zh_ALL.xml' />
+,"calc","/css","calc-tablet.css",<LOB FILE='calc/calc-tablet.css' />
+,"calc","/css","calc.css",<LOB FILE='calc/calc.css' />
 ,"blogparts","/","blogparts.xml",<LOB FILE='blogparts/blogparts.xml' />
 ,"blogparts","/","page_white_gear.gif",<LOB FILE='blogparts/page_white_gear.gif' />
 ,"blogparts","/","ALL_ALL.xml",<LOB FILE='blogparts/ALL_ALL.xml' />
@@ -34,6 +40,8 @@
 ,"worldclock","/","ALL_ALL.xml",<LOB FILE='worldclock/ALL_ALL.xml' />
 ,"worldclock","/","ja_ALL.xml",<LOB FILE='worldclock/ja_ALL.xml' />
 ,"worldclock","/","zh_ALL.xml",<LOB FILE='worldclock/zh_ALL.xml' />
+,"worldclock","/css","worldclock-tablet.css",<LOB FILE='worldclock/css/worldclock-tablet.css' />
+,"worldclock","/css","worldclock.css",<LOB FILE='worldclock/css/worldclock.css' />
 ,"todoList","/","todoList.xml",<LOB FILE='todoList/todoList.xml' />
 ,"todoList","/","todoList.js",<LOB FILE='todoList/todoList.js' />
 ,"todoList","/","browser.js",<LOB FILE='todoList/browser.js' />
@@ -43,3 +51,5 @@
 ,"todoList","/","ALL_ALL.xml",<LOB FILE='todoList/ALL_ALL.xml' />
 ,"todoList","/","ja_ALL.xml",<LOB FILE='todoList/ja_ALL.xml' />
 ,"todoList","/","zh_ALL.xml",<LOB FILE='todoList/zh_ALL.xml' />
+,"todoList","/css","todoList-tablet.css",<LOB FILE='todoList/css/todoList-tablet.css' />
+,"todoList","/css","todoList.css",<LOB FILE='todoList/css/todoList.css' />

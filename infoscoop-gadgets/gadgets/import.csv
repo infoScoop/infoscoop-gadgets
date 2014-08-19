@@ -22,8 +22,8 @@
 ,"calc","/","ALL_ALL.xml",<LOB FILE='calc/ALL_ALL.xml' />
 ,"calc","/","ja_ALL.xml",<LOB FILE='calc/ja_ALL.xml' />
 ,"calc","/","zh_ALL.xml",<LOB FILE='calc/zh_ALL.xml' />
-,"calc","/css","calc-tablet.css",<LOB FILE='calc/calc-tablet.css' />
-,"calc","/css","calc.css",<LOB FILE='calc/calc.css' />
+,"calc","/css","calc-tablet.css",<LOB FILE='calc/css/calc-tablet.css' />
+,"calc","/css","calc.css",<LOB FILE='calc/css/calc.css' />
 ,"blogparts","/","blogparts.xml",<LOB FILE='blogparts/blogparts.xml' />
 ,"blogparts","/","page_white_gear.gif",<LOB FILE='blogparts/page_white_gear.gif' />
 ,"blogparts","/","ALL_ALL.xml",<LOB FILE='blogparts/ALL_ALL.xml' />

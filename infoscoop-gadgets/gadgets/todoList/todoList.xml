@@ -7,7 +7,7 @@
 		<Locale messages="ALL_ALL.xml" />
 		<Locale lang="ja" messages="ja_ALL.xml"/>
 		<Locale lang="zh" messages="zh_ALL.xml"/>
-		<Icon>__IS_GADGET_BASE_URL__/tick.gif</Icon>
+		<Icon>__IS_GADGET_BASE_URL__/tick.png</Icon>
 	</ModulePrefs>
 
 	<WidgetPref datatype="bool" display_name="__MSG_titleEdit__" name="titleEdit" value="true"/>

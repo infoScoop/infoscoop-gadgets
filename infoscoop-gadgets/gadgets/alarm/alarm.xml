@@ -8,7 +8,7 @@
 		<Locale messages="ALL_ALL.xml" />
 		<Locale lang="ja" messages="ja_ALL.xml"/>
 		<Locale lang="zh" messages="zh_ALL.xml"/>
-		<Icon>__IS_GADGET_BASE_URL__/clock.gif</Icon>
+		<Icon>__IS_GADGET_BASE_URL__/bell.png</Icon>
 	</ModulePrefs>
 
 	<UserPref required="true" name="title" datatype="string" display_name="__MSG_uptitle__"/>

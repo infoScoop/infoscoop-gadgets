@@ -6,7 +6,7 @@
 		<Locale messages="ALL_ALL.xml" />
 		<Locale lang="ja" messages="ja_ALL.xml"/>
 		<Locale lang="zh" messages="zh_ALL.xml"/>
-		<Icon>__IS_GADGET_BASE_URL__/page_white_gear.gif</Icon>
+		<Icon>__IS_GADGET_BASE_URL__/page_white_gear.png</Icon>
 	</ModulePrefs>
 	<UserPref default_value="auto" display_name="__MSG_itemDisplay__" datatype="enum" name="itemDisplay">
 		<EnumValue display_value="__MSG_itemDisplay-inline__" value="inline"/>

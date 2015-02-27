@@ -1,6 +1,6 @@
 ,"sticky","/","sticky.xml",<LOB FILE='sticky/sticky.xml' />
 ,"sticky","/","sticky.js",<LOB FILE='sticky/sticky.js' />
-,"sticky","/","note.gif",<LOB FILE='sticky/note.gif' />
+,"sticky","/","note.png",<LOB FILE='sticky/note.png' />
 ,"sticky","/","ALL_ALL.xml",<LOB FILE='sticky/ALL_ALL.xml' />
 ,"sticky","/","ja_ALL.xml",<LOB FILE='sticky/ja_ALL.xml' />
 ,"sticky","/","zh_ALL.xml",<LOB FILE='sticky/zh_ALL.xml' />
@@ -8,7 +8,7 @@
 ,"sticky","/css","sticky.css",<LOB FILE='sticky/css/sticky.css' />
 ,"alarm","/","alarm.xml",<LOB FILE='alarm/alarm.xml' />
 ,"alarm","/","alarm.js",<LOB FILE='alarm/alarm.js' />
-,"alarm","/","clock.gif",<LOB FILE='alarm/clock.gif' />
+,"alarm","/","bell.png",<LOB FILE='alarm/bell.png' />
 ,"alarm","/","ALL_ALL.xml",<LOB FILE='alarm/ALL_ALL.xml' />
 ,"alarm","/","ja_ALL.xml",<LOB FILE='alarm/ja_ALL.xml' />
 ,"alarm","/","zh_ALL.xml",<LOB FILE='alarm/zh_ALL.xml' />
@@ -18,14 +18,14 @@
 ,"calc","/","calc.js",<LOB FILE='calc/calc.js' />
 ,"calc","/","browser.js",<LOB FILE='calc/browser.js' />
 ,"calc","/","prototype-1.6.0.3-min.js",<LOB FILE='calc/prototype-1.6.0.3-min.js' />
-,"calc","/","calculator.gif",<LOB FILE='calc/calculator.gif' />
+,"calc","/","calculator.png",<LOB FILE='calc/calculator.png' />
 ,"calc","/","ALL_ALL.xml",<LOB FILE='calc/ALL_ALL.xml' />
 ,"calc","/","ja_ALL.xml",<LOB FILE='calc/ja_ALL.xml' />
 ,"calc","/","zh_ALL.xml",<LOB FILE='calc/zh_ALL.xml' />
 ,"calc","/css","calc-tablet.css",<LOB FILE='calc/css/calc-tablet.css' />
 ,"calc","/css","calc.css",<LOB FILE='calc/css/calc.css' />
 ,"blogparts","/","blogparts.xml",<LOB FILE='blogparts/blogparts.xml' />
-,"blogparts","/","page_white_gear.gif",<LOB FILE='blogparts/page_white_gear.gif' />
+,"blogparts","/","page_white_gear.png",<LOB FILE='blogparts/page_white_gear.png' />
 ,"blogparts","/","ALL_ALL.xml",<LOB FILE='blogparts/ALL_ALL.xml' />
 ,"blogparts","/","ja_ALL.xml",<LOB FILE='blogparts/ja_ALL.xml' />
 ,"blogparts","/","zh_ALL.xml",<LOB FILE='blogparts/zh_ALL.xml' />
@@ -36,7 +36,7 @@
 ,"worldclock","/imgs","jp.png",<LOB FILE='worldclock/imgs/jp.png' />
 ,"worldclock","/imgs","us.png",<LOB FILE='worldclock/imgs/us.png' />
 ,"worldclock","/imgs","cn.png",<LOB FILE='worldclock/imgs/cn.png' />
-,"worldclock","/","clock-globe.gif",<LOB FILE='worldclock/clock-globe.gif' />
+,"worldclock","/","clock.png",<LOB FILE='worldclock/clock.png' />
 ,"worldclock","/","ALL_ALL.xml",<LOB FILE='worldclock/ALL_ALL.xml' />
 ,"worldclock","/","ja_ALL.xml",<LOB FILE='worldclock/ja_ALL.xml' />
 ,"worldclock","/","zh_ALL.xml",<LOB FILE='worldclock/zh_ALL.xml' />
@@ -46,7 +46,7 @@
 ,"todoList","/","todoList.js",<LOB FILE='todoList/todoList.js' />
 ,"todoList","/","browser.js",<LOB FILE='todoList/browser.js' />
 ,"todoList","/","prototype-1.6.0.3-min.js",<LOB FILE='todoList/prototype-1.6.0.3-min.js' />
-,"todoList","/","tick.gif",<LOB FILE='todoList/tick.gif' />
+,"todoList","/","tick.png",<LOB FILE='todoList/tick.png' />
 ,"todoList","/imgs","trash.gif",<LOB FILE='todoList/imgs/trash.gif' />
 ,"todoList","/","ALL_ALL.xml",<LOB FILE='todoList/ALL_ALL.xml' />
 ,"todoList","/","ja_ALL.xml",<LOB FILE='todoList/ja_ALL.xml' />
